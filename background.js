@@ -1,7 +1,9 @@
 const closeZoomWindow = (tab)=>{
-    if (tab.url.includes('https://www.twilio.com/en-us/help/sales/thank-you-for-meeting')|| tab.url.includes('https://twilio.zoom.us/j/')) {
-        chrome.tabs.remove(tab.id)
-    }
+    setTimeout(()=>{
+        if (tab.url.includes('https://www.twilio.com/en-us/help/sales/thank-you-for-meeting')|| tab.url.includes('https://twilio.zoom.us/j/')) {
+            chrome.tabs.remove(tab.id)
+        }
+    },500)
 }
 
 const closeZoomWindowProxy = (tabId,changeInfo,tab)=>{
