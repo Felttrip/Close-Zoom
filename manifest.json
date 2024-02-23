@@ -5,7 +5,7 @@
       "tabs"
     ],
     "description": "Close all weird zoom tabs",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "icons": {
         "48": "icons/48.png",
         "128": "icons/128.png"
